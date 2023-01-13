@@ -1,0 +1,23 @@
+.creator {
+  margin-top: 4rem;
+  margin-left: 6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.poster {
+  width: 40vw;
+  height: 40vh;
+  border-radius: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: whitesmoke;
+}
+
+
+.poster:hover {
+  filter: drop-shadow(0 0 4px var(--color-letters)) drop-shadow(0 0 2px var(--color-letters))
+    drop-shadow(0 0 5px var(--color-letters));
+}

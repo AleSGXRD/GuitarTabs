@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tu GuitarTabs</title>
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/baseTabs.css" />
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body onload="loadSite(0)">
+    <header>
+      <ul>
+        <a href="index.html"><li>Home</li></a>
+        <a href="tabs.html"><li>Tabs</li></a>
+        <a href="info.html"><li>Info</li></a>
+      </ul>
+    </header>
+    <div class="menu-tabs">
+      <ul id="collection"></ul>
+      <div class="search">
+        <p class="letterHeader">Search</p>
+        <div>
+          <input type="text" placeholder="Search..." id="Search" />
+          <button class="filtrador" onclick="loadSite(0)"><img src="img/icons/search-regular-240.png" alt="Foto de lupa"></button>
+        </div>
+        <div>
+          <img
+            class="arrow"
+            src="img/icons/left-arrow-solid-240.png"
+            onclick="switchList(-1)"
+            alt="Logo del artista"
+          />
+          <div id="numbers"></div>
+          <img
+            class="arrow"
+            src="img/icons/right-arrow-solid-240.png"
+            onclick="switchList(1)"
+            alt="Logo del artista"
+          />
+        </div>
+        <div class="filter-buttons">
+          <button id="btn-0" class="" onclick="activeGender(0)"><img src="img/icons/AnimeLogo.png" alt="Foto de anime"></button>
+          <button id="btn-1" class="" onclick="activeGender(1)"><img src="img/icons/GameLogo.png" alt="Foto de juegos"></button>
+          <button id="btn-2" class="" onclick="activeGender(2)"><img src="img/icons/POPLogo.png" alt="Foto de pop"></button>
+        </div>
+      </div>
+    </div>
+    <footer>®CopyRight Alejandro Sánchez González, <strong>ALL RIGHTS RESERVERD</strong></footer>
+  </body>
+</html>
