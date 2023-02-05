@@ -47,6 +47,12 @@ var listSave = [
     gender: "POP",
     creator: 0,
   },
+  {
+    direc: "tabs/Song-of-the-Ancients.pdf",
+    description: "Songs of the Ancients-Nier Replicant",
+    gender: "Game",
+    creator: 0,
+  },
 ];
 var list;
 

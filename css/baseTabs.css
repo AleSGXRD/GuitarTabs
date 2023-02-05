@@ -4,16 +4,11 @@
   
 }
 
-.menu-tabs {
-  position: relative;
-  display: flex;
-  margin-top: 4%;
-  margin-left: 4%;
-  backdrop-filter: blur(0.5em);
-}
-.menu-tabs #collection {
-  width: 52vw;
-  height: 78.5vh;
+#collection {
+  width:100%;
+  height:100%;
+  margin-top: 20px;
+  min-height: 700px;
   border-radius: 1.5%;
   padding: 20px 25px;
 
@@ -21,51 +16,56 @@
   background: var(--bg-header);
   border: solid 0.5px var(--color-letters);
 }
-.menu-tabs #collection a {
+#collection a {
   position: relative;
   display: flex;
   justify-content: left;
   align-items: center;
 
-  width: 51.2vw;
-  height: 6.3vh;
+  width: 100%;
+  height: 8.3%;
   padding-left: 10px;
 
   cursor: pointer;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 20px;
+  overflow: hidden;
 
   color: #bbb;
   background: var(--bg--item);
   border: solid 0.5px #333;
 }
-.menu-tabs #collection a:hover {
+#collection a:hover {
   background: var(--bg--itemSelect);
   border: solid 0.5px var(--color-letters);
   color: var(--color-letters);
 }
-.menu-tabs #collection .first {
+#collection .first {
   border-radius: 10px 10px 0px 0px;
 }
-.menu-tabs #collection .last {
+#collection .last {
   border-radius: 0px 0px 10px 10px;
 }
-.menu-tabs .search {
+.search {
   background: var(--bg-header);
   display: flex;
   align-items: center;
   flex-direction: column;
 
-  width: 30vw;
-  height: 40vh;
-  margin-left: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 87%;
+  min-width: 330px;
+  height: 40%;
+  min-height: 300px;
   border-radius: 1.5%;
 
   color: #bbb;
   border: solid 0.5px var(--color-letters);
 }
 
-.menu-tabs .search div {
+.search div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,28 +74,27 @@
   margin-top: 15px;
 }
 
-.menu-tabs .search input {
-  width: 20vw;
-  height: 3vh;
+.search input {
+  width: 100%;
+  height: 100%;
   color: #444;
 }
 
-.menu-tabs .search .filtrador {
-  width: 1.8vw;
-  height: 100%;
+.search .filtrador {
+  width: 40px;
+  height: 40px;
   font-size: 8px;
 
   color: #fff;
   background: #444;
   border: solid 1.2px #444;
 }
-.menu-tabs .search .filtrador img {
+.search .filtrador img {
   position: relative;
   height: 100%;
   width: 100%;
 }
-
-.menu-tabs .search button:hover {
+.search button:hover {
   color: var(--color-letters);
   border: solid 1.2px var(--color-letters);
   filter: drop-shadow(0 0 2px var(--color-letters)) drop-shadow(0 0 2px var(--color-letters))
@@ -103,14 +102,14 @@
     background: whitesmoke;
 }
 
-.menu-tabs .search div .arrow {
+.search div .arrow {
   margin-top: 10px;
   width: 30px;
   height: 30px;
   cursor: pointer;
 }
 
-.menu-tabs .search div .arrow:hover {
+.search div .arrow:hover {
   filter: drop-shadow(0 0 2px var(--color-letters)) drop-shadow(0 0 2px var(--color-letters))
     drop-shadow(0 0 5px var(--color-letters));
 }
@@ -121,8 +120,8 @@
   align-items: center;
   justify-content: center;
   
-  width: 3vw;
-  height: 6vh;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   margin: 0 20px 20px 20px;
   
@@ -140,8 +139,10 @@
     drop-shadow(0 0 5px var(--color-letters));
     background: whitesmoke;
 }
-#numbers {
+#numbers a{
   font-size: 18px;
+  text-decoration: none;
+  color: #fff;
 }
 #numbers .pos {
   color: var(--color-letters);

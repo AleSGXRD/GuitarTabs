@@ -1,21 +1,32 @@
 .creator {
-  margin-top: 4rem;
-  margin-left: 6vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
+
 .poster {
-  width: 40vw;
-  height: 40vh;
+  width: 60%;
+  min-width: 350px;
+  height: 30vh;
   border-radius: 6%;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background: whitesmoke;
 }
-
+.creator .letterHeader{
+  font-size: 48px;
+  background: rgb(0,0,0,0.5);
+  backdrop-filter: blur(0.2em);
+  border-radius: 9%;
+}
+.creator img{
+  height: 50%;
+  width: 50%;
+  min-height: 150px;
+  min-width: 300px;
+}
 
 .poster:hover {
   filter: drop-shadow(0 0 4px var(--color-letters)) drop-shadow(0 0 2px var(--color-letters))
