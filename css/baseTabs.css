@@ -9,14 +9,14 @@
   height:100%;
   margin-top: 20px;
   min-height: 700px;
-  border-radius: 1.5%;
+  border-radius: 1.5rem;
   padding: 20px 25px;
 
   color: #bbb;
   background: var(--bg-header);
   border: solid 0.5px var(--color-letters);
 }
-#collection a {
+#collection .item {
   position: relative;
   display: flex;
   justify-content: left;
@@ -26,19 +26,40 @@
   height: 8.3%;
   padding-left: 10px;
 
-  cursor: pointer;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   overflow: hidden;
 
   color: #bbb;
   background: var(--bg--item);
   border: solid 0.5px #333;
 }
-#collection a:hover {
+#collection .item:hover {
   background: var(--bg--itemSelect);
   border: solid 0.5px var(--color-letters);
   color: var(--color-letters);
+}
+#collection .item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  color: #bbb;
+  background: var(--bg--item);
+  border: solid 0.5px #333;
+
+}
+#collection .item a:hover {
+  border-radius: 50%;
+
+  color: var(--color-letters);
+  background: var(--bg--itemSelect);
+  border: solid 0.5px var(--color-letters);
+
 }
 #collection .first {
   border-radius: 10px 10px 0px 0px;
@@ -59,7 +80,7 @@
   min-width: 330px;
   height: 40%;
   min-height: 300px;
-  border-radius: 1.5%;
+  border-radius: 1.5rem;
 
   color: #bbb;
   border: solid 0.5px var(--color-letters);

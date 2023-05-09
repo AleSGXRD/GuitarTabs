@@ -1,7 +1,8 @@
 :root {
   --bg-black: #18191b;
+  --bg-black2:rgb(21, 21, 23);
   --bg-header: hsl(240, 6%, 10%);
-  --color-letters: rgb(216, 132, 59);
+  --color-letters: #d8843b;
   --br: 5px;
   --border: solid 1px rgba(0, 0, 0, 0.5);
   --bs-nav-link-color: #bbb;
@@ -11,7 +12,36 @@
   padding: 0;
   margin: 0;
 }
+.continue{
+  border: solid 1px var(--color-letters);
+  border-radius:2.5rem ;
+  background-color: var(--bg-black);
 
+  display: flex;
+  flex-direction: column;
+
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: var(--color-letters);
+
+  min-width: 200px;
+  min-height: 250px;
+  max-width: 200px;
+}
+.continue svg{
+  fill: var(--color-letters);
+}
+.continue:hover{
+  background-color: var(--color-letters);
+  border: solid 1px var(--bg-black);
+  color: var(--bg-black);
+
+}
+.continue:hover svg{
+  fill: var(--bg-black);
+}
 .footer {
   position: fixed;
   right: 0;
@@ -21,8 +51,8 @@
 }
 
 body {
-  background: #000;
-  background-image: url(../img/100559.jpg);
+  background: var(--bg-black2);
+  /*background-image: url(../img/100559.jpg);*/
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -34,7 +64,7 @@ body {
 
 nav {
   background: var(--bg-header);
-  box-shadow: 0px 0px 5px 5px rgba(00, 0, 0, 0.5);
+  box-shadow: 0px 0px 5px 2px rgba(00, 0, 0, 0.3);
   color: #fff;
 }
 
@@ -57,6 +87,22 @@ nav {
 .navbar-nav .nav-link.active {
   color: #fff;
 }
+.navbar-toggler{
+  border-radius: 50%;
+  padding: 7px 10px;
+  border: 0px solid var(--bs-navbar-toggler-border-color);
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0.2px 0 0.7px;
+
+  color:var(--color-letters);
+}
+.navbar-toggler span{
+  border-radius: 50%;
+  color: #fff;
+}
 
 footer {
   position: fixed;
@@ -67,8 +113,12 @@ footer {
 }
 
 .home {
+  border: solid 3px #141415;
+  background: var(--bg-black);
+  border-radius: 0.6rem;
+  padding: 25px;
+
   z-index: 1;
-  margin-top: 4%;
   min-width: 50%;
 
 }
