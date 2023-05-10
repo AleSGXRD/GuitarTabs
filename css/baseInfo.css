@@ -33,6 +33,7 @@
   padding: 0px 15px;
   backdrop-filter: blur(0.2em);
   border-radius: 7.5rem;
+  max-width: 500px;
 }
 .creator img{
   height: 50%;
