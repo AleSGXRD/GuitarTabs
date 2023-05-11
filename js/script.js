@@ -76,7 +76,15 @@ var listSave = [
     direc_youtube: "https://www.youtube.com/watch?v=OVGFjosVjPc",
     direc_channel: "",
     description: "Shikisai-SPYxFAMILY ED 2",
-    gender: "Game",
+    gender: "Anime",
+    creator: 0,
+  },
+  {
+    direc_pdf: "",
+    direc_youtube: "https://www.youtube.com/watch?v=N3NcJUC3Clw",
+    direc_channel: "",
+    description: "KRONE-Guilty Crown",
+    gender: "Anime",
     creator: 0,
   },
 ];
@@ -102,10 +110,10 @@ var pos = 0;
 function activeGender(i) {
   if (gendersList[i].active == false) {
     gendersList[i].active = true;
-    document.getElementById("btn-" + i).classList.add("btnAble");
+    $("#btn-" + i).addClass("btnAble");
   } else {
     gendersList[i].active = false;
-    document.getElementById("btn-" + i).classList.remove("btnAble");
+    $("#btn-" + i).removeClass("btnAble");
   }
   loadSite(0);
 }
@@ -144,7 +152,7 @@ function filterGender() {
 }
 
 function filterList() {
-  var cad = document.querySelector("#Search").value.toLocaleLowerCase();
+  var cad = $('#Search').val().toLocaleLowerCase();
   var nuevaLista = [];
 
   if (cad !== "") {
@@ -189,7 +197,7 @@ function showList() {
     </div>
         `;
   }
-  document.getElementById("collection").innerHTML = text;
+  $('#collection').html(text);
 
   let iterators = "";
   for (var i = 0; i < list.length; i += 12) {
@@ -198,7 +206,7 @@ function showList() {
     }" onclick="loadSite(${i / 12})">${1 + i / 12}</a>-`;
   }
   iterators = iterators.substring(0, iterators.length - 1);
-  document.getElementById("numbers").innerHTML = iterators;
+  $('#numbers').html(iterators);
 }
 
 function switchList(i) {
