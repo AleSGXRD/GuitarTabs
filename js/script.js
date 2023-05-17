@@ -90,7 +90,7 @@ var listSave = [
   {
     direc_pdf: "",
     direc_youtube: "https://www.youtube.com/watch?v=yr1t0pRwHUY&t=61s",
-    direc_channel: "",
+    direc_channel: "https://coachguitar.com",
     description: "Feel Good-Gorillaz",
     gender: "POP",
     creator: 0,
